@@ -1,0 +1,18 @@
+import { Router, Link } from "@reach/router";
+
+const Routing = ({ children }) => (
+    <div>
+        <nav>
+            <Link to="/">Home</Link> <Link to="dashboard">Dashboard</Link>
+        </nav>
+        <Router>
+            <Home path="/" />
+        </Router>
+    </div>
+);
+
+const Home = () => (
+    <div>
+        <h2>Welcome</h2>
+    </div>
+);
